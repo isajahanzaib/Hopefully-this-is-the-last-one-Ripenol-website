@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripenol - Precision Ripening Blueprint</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="ld-logo">
+            <img src="Images that you could need/RipenolTM-Logo-Text.png" alt="Ripenol™" style="width: 220px; max-width: 85vw; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="ld-bar">
+            <div class="ld-fill" id="ld-fill"></div>
+        </div>
+        <div class="ld-t" id="ld-t">Loading</div>
+    </div>
+
+    <!-- ══════════════ NAV ══════════════ -->
+    <nav id="nav">
+        <a href="#" class="n-logo">
+            <img src="Images that you could need/RipenolTM-Logo-Text.png" alt="Ripenol" class="n-logo-img">
+        </a>
+        <div class="n-links">
+            <a href="#purity" data-i18n="nav-purity">Purity</a>
+            <a href="#performance" data-i18n="nav-performance">Performance</a>
+            <a href="#investment" data-i18n="nav-investment">Investment</a>
+            <a href="#supply" data-i18n="nav-supply">Supply</a>
+            <a href="#contact" data-i18n="nav-contact">Contact</a>
+        </div>
+        <div class="n-right">
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                <span class="lt-en">EN</span><span class="lt-sep">|</span><span class="lt-ar">AR</span>
+            </button>
+            <a href="#contact" class="n-cta" data-i18n="nav-cta">Get In Touch</a>
+            <button class="n-ham" id="n-ham" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div id="mob-overlay"></div>
+    <div id="mob-drawer">
+        <button class="drawer-x" id="drawer-x">&times;</button>
+        <a href="#purity" class="drawer-a" data-i18n="nav-purity">Purity</a>
+        <a href="#performance" class="drawer-a" data-i18n="nav-performance">Performance</a>
+        <a href="#investment" class="drawer-a" data-i18n="nav-investment">Investment</a>
+        <a href="#supply" class="drawer-a" data-i18n="nav-supply">Supply</a>
+        <a href="#contact" class="drawer-a" data-i18n="nav-contact">Contact</a>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="sec-hero">
+        <div class="container hero-container">
+            <div class="hero-content fi">
+                <div class="hero-eyebrow" data-i18n="hero-eyebrow">— MADE IN OMAN . EST . 2024</div>
+                <h1 class="hero-h" data-i18n-html="hero-title">The Purest Fuel For<br><em>Precision</em> Ripening.</h1>
+                <p class="hero-p" data-i18n-html="hero-desc">Ripenol™ is a <strong>90% active ethanol</strong> ripening concentrate engineered for maximum yield, clean, residue-free ethylene conversion — zero harmful byproducts for every batch.</p>
+                <div class="hero-product-of fi">A Product of
+                    <img src="Images that you could need/Al Awalawya - logo.png" alt="Al Awalawya Global Trading LLC" class="al-inline-logo">
+                </div>
+                
+                <div class="hero-actions fi">
+                    <a href="#supply" class="btn-primary flex-btn" data-i18n="hero-btn-primary">SECURE YOUR SUPPLY →</a>
+                    <a href="#purity" class="btn-outline flex-btn" data-i18n="hero-btn-text">HOW IT WORKS ↓</a>
+                    <a href="#resources" class="btn-outline flex-btn" data-i18n="hero-btn-res">DOWNLOAD RESOURCES ↓</a>
+                </div>
+            </div>
+            <div class="hero-visual fi">
+                <div class="hero-bottle-wrap">
+                    <img src="Images that you could need/fruits with shadow.png" alt="Fruits" class="hero-fruits-bg">
+                    <img src="Images that you could need/Podium & Bottle.png" alt="Ripenol Bottle on Podium with fruits" class="hero-bottle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. PURITY SECTION -->
+    <section id="purity" class="sec-purity">
+        <div class="container text-center fi">
+            <div class="sec-tagline" data-i18n="purity-tag">— 01 — PURITY & SAFETY</div>
+            <h2 class="sec-heading" data-i18n-html="purity-title">Uncompromising <em>Purity.</em> Unwavering Safety.</h2>
+            <p class="sec-subheading" data-i18n="purity-desc">Not all ripening concentrates are equal. <strong>Ripenol™</strong> is meticulously formulated for precise, clean conversion — safeguarding your produce and your operations.</p>
+        </div>
+        <div class="container purity-grid fi">
+            <!-- Left: Ripenol -->
+            <div class="purity-card">
+                <div class="pc-badge pc-brand" data-i18n="good-badge">RIPENOL™</div>
+                <img src="Images that you could need/1774414832766(2).png" alt="Pure Banana" class="purity-img">
+                <div class="pc-result good">
+                    <span class="icon-chk">✔</span> <strong data-i18n="good-h">Pure Conversion</strong>
+                </div>
+                <p class="pc-desc" data-i18n="good-p">Specially formulated ethanol converts cleanly into ethylene gas. No residues, no contamination, no byproducts. Your produce and your people are protected at every cycle.</p>
+            </div>
+            <div class="purity-divider"></div>
+            <!-- Right: Unauthorized -->
+            <div class="purity-card">
+                <div class="pc-badge pc-unauth" data-i18n="bad-badge">UNAUTHORIZED LIQUIDS</div>
+                <img src="Images that you could need/1774414704530(1).png" alt="Damaged Banana" class="purity-img">
+                <div class="pc-result bad">
+                    <span class="icon-x">✘</span> <strong data-i18n="bad-h">Harmful Byproducts</strong>
+                </div>
+                <p class="pc-desc" data-i18n="bad-p">May damage your generator and produce toxic byproducts that compromise your produce and operations. The cost is always greater than any perceived savings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. YIELD SECTION -->
+    <section id="performance" class="sec-yield">
+        <div class="container text-center fi">
+            <h2 class="sec-heading" data-i18n-html="perf-title">Superior Yield. <em>Certified Quality.</em></h2>
+            <p class="sec-subheading" data-i18n="perf-desc">Maximize ROI. One litre of <strong>Ripenol™</strong> used <strong>Safe-Ripe™</strong> ripening generator converts into 0.314 m³ of pure ethylene gas — sufficient to ripen several loads per cycle. It ensures every batch of fruit ripens perfectly, optimizing consistency and reducing waste.</p>
+        </div>
+        
+        <div class="container yield-grid fi">
+            <div class="yield-left">
+                <!-- Cost Box -->
+                <div class="info-card fi">
+                    <h3 class="ic-heading" data-i18n="cost-tag">COST-EFFECTIVE CONCENTRATION</h3>
+                    <p class="ic-desc" data-i18n="cost-desc">The High Concentration Of Ripenol™ And Efficient Conversion Translate To Lower Operational Costs Per Ripening Cycle, Enhancing Your Profitability.</p>
+                </div>
+                
+                <!-- Fruits Box -->
+                <div class="info-card fi">
+                    <h3 class="ic-heading" data-i18n="fruits-tag">Versatile Fruit Application</h3>
+                    <p class="ic-desc" data-i18n="fruits-desc">Ideal For A Wide Range Of Climacteric Fruits, Including:<br>Bananas, Mango, Avocados, Citrus Fruit, Melons, Papayas, Pears, Tomatoes, And Even Tobacco.</p>
+                    <div class="fruit-pills">
+                        <span class="fpill">🥭 Mango</span>
+                        <span class="fpill">🥭 Mango</span>
+                        <span class="fpill">🥑 Avocados</span>
+                        <span class="fpill">🍊 Citrus Fruit</span>
+                        <span class="fpill">🍈 Melons</span>
+                        <span class="fpill">🧡 Papayas</span>
+                        <span class="fpill">🍐 Pears</span>
+                        <span class="fpill">🍅 Tomatoes</span>
+                        <span class="fpill">🌿 Tobacco</span>
+                    </div>
+                </div>
+                
+                <!-- Output Box -->
+                <div class="info-card fi">
+                    <h3 class="ic-heading" data-i18n="bar-tag">Ethylene Output Comparison</h3>
+                    <p class="ic-desc">Per Litre Ethylene Yield — Measured Output At 150ppm.</p>
+                    <div class="chart-row">
+                        <span class="cr-label" data-i18n="bar-lbl-rip">Ripenol™</span>
+                        <div class="cr-bar-wrap"><div class="cr-bar rip" style="width: 100%;"></div></div>
+                        <span class="cr-val">0.314m³</span>
+                    </div>
+                    <div class="chart-row">
+                        <span class="cr-label" data-i18n="bar-lbl-gen">Generic</span>
+                        <div class="cr-bar-wrap"><div class="cr-bar gen" style="width: 25%;"></div></div>
+                        <span class="cr-val">Low</span>
+                    </div>
+                    <div class="calc-box" data-i18n-html="formula">
+                        <strong>0.314 m³ × 1,000,000 ÷ 150 ppm = 2,093 m³ room</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="yield-right">
+                <!-- Ripening Guide -->
+                <div class="info-card chart-card fi">
+                    <h3 class="ic-heading" data-i18n="chart-title">Industry Standard Ripening</h3>
+                    <p class="ic-desc" data-i18n="chart-desc">Use The Industry-Standard Banana Color Chart To Achieve Precise, Consistent Ripening From Grade 1 (Green) To Grade 6 (All Yellow).</p>
+                    
+                    <img src="Images that you could need/Banana chart.png" alt="Banana Chart" class="banana-chart-img" style="width:100%; border-radius:8px; margin-top:20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PARTNERSHIP -->
+    <section id="investment" class="sec-partnership" style="background-image: url('Images that you could need/safe-ripe-in-cold-room.png'); background-size: cover; background-position: center; position: relative;">
+        <!-- white overlay fade to blend with text readability -->
+        <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(246, 246, 241, 0.85);"></div>
+        
+        <div class="container text-center fi" style="position: relative; z-index: 2;">
+            <div class="sec-tagline" data-i18n="invest-tag">— 03 — ESSENTIAL PARTNERSHIP</div>
+            <h2 class="sec-heading" data-i18n-html="invest-title">Protect Your <em>Investment</em></h2>
+            <p class="sec-subheading" style="max-width: 900px;" data-i18n-html="invest-desc">Ripenol™ is the <strong>exclusive and required</strong> concentrate for use in authenticated <strong>Safe-Ripe™ Ethylene Gas Generators</strong>. This precise pairing is your guarantee of optimal generator performance, validated safety, and most importantly, it <strong>maintains the validity of your equipment warranty</strong>. Using unauthorized liquids can damage the generator's catalyst and void your warranty.</p>
+            
+            <div class="partnership-visuals fi">
+                <div class="pv-item">
+                    <img src="Images that you could need/Layer 0.png" alt="Safe Ripe Generator" class="pv-img">
+                    <div class="pv-label">
+                        <img src="Images that you could need/safe-ripe-logo.png" style="height:40px;margin-bottom:5px;">
+                        <span class="pv-sub">Ripening Gas Generators</span>
+                    </div>
+                </div>
+                <div class="pv-plus">+</div>
+                <div class="pv-item">
+                    <img src="Images that you could need/bottle.png" alt="Ripenol Bottle" class="pv-img">
+                    <div class="pv-label dark-label">
+                        <img src="Images that you could need/RipenolTM-Logo-Text.png" style="height:35px;margin-bottom:5px;">
+                        <span class="pv-sub">ONLY FOR USE WITH AN ETHYLENE GENERATOR TO PRODUCE ETHYLENE TO ACCELERATE RIPENING OF:<br>Bananas, Mango, Avocados, Citrus Fruit, Melons, Papayas, Pears, Tomatoes and Tobacco</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SUPPLY -->
+    <section id="supply" class="sec-supply" style="background-image: url('Images that you could need/world-map.png'); background-size: cover; background-position: center;">
+        <div class="container fi text-center">
+            <p class="supply-p" data-i18n-html="supply-desc">Available direct through <strong>Al Awalawya Global Trading LLC</strong> and via our expanding worldwide distributor network.</p>
+            
+            <div class="supply-grid">
+                <div class="sg-left">
+                    <div class="sg-card fi">
+                        <h4 class="sgc-heading">🌍 <span data-i18n="sc-1-h">Secure Your Supply</span></h4>
+                        <p class="sgc-desc" data-i18n="sc-1-p">Purchase Directly Or Through Our Expanding Worldwide Distributor Network — Reliable, Consistent Supply Wherever You Operate.</p>
+                    </div>
+                    <div class="sg-card fi">
+                        <h4 class="sgc-heading">📦 <span data-i18n="sc-2-h">Efficient Logistics</span></h4>
+                        <p class="sgc-desc" data-i18n="sc-2-p">Non-Pressurized Liquid Concentrate Simplifies International Shipping — No Hazardous Freight Complications Or Pressurized Handling.</p>
+                    </div>
+                    <div class="sg-card fi">
+                        <h4 class="sgc-heading">♻️ <span data-i18n="sc-3-h">Responsible Disposal</span></h4>
+                        <p class="sgc-desc" data-i18n="sc-3-p">Triple Rinse Containers Before Recycling Or Disposal. Refer To MSDS For Complete Safety And Handling Instructions.</p>
+                    </div>
+                </div>
+                <div class="sg-right fi">
+                    <!-- The pallets on world map visualization is implicitly embedded in background, we can add image -->
+                    <img src="Images that you could need/Group 9.png" alt="Ripenol Supply" style="width: 100%; max-width: 500px; display:block; margin: 0 auto; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));">
+                </div>
+            </div>
+            
+            <div class="supply-banner fi">
+                <div class="sb-content">
+                    <h3 class="sb-heading" data-i18n="sct-tag">SECURE YOUR EXPORT SUPPLY TODAY.</h3>
+                    <p class="sb-subheading" data-i18n-html="sct-h">CONTACT US FOR BULK EXPORT PRICING AND PARTNERSHIP OPPORTUNITIES.</p>
+                </div>
+                <a href="#contact" class="btn-outline dark" data-i18n="sct-cta">CONTACT US →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. RESOURCES -->
+    <section id="resources" class="sec-resources">
+        <div class="container text-center fi">
+            <div class="sec-tagline" data-i18n="res-tag">— 05 — RESOURCES</div>
+            <h2 class="sec-heading" data-i18n-html="res-title">Download & <em>Learn More.</em></h2>
+            <p class="sec-subheading" data-i18n="res-desc">Full product knowledge for your operations team, procurement department, or compliance review.</p>
+        </div>
+        <div class="container resources-grid fi">
+            <!-- Brochure Eng -->
+            <a href="#" class="res-card">
+                <div class="rc-img-wrap"><img src="Images that you could need/Front Page.png" alt="Brochure English"></div>
+                <div class="rc-footer">
+                    <div>
+                        <span class="rc-badge pdf">PDF</span> <span class="rc-title" data-i18n="rc-name-en">Brochure (English)</span>
+                        <div class="rc-meta">27-03-2026 | 1.06 MB</div>
+                    </div>
+                    <span class="rc-icon">↓</span>
+                </div>
+            </a>
+            <!-- Brochure Ar -->
+            <a href="#" class="res-card">
+                <div class="rc-img-wrap"><img src="Images that you could need/Front Page copy.png" alt="Brochure Arabic"></div>
+                <div class="rc-footer">
+                    <div>
+                        <span class="rc-badge pdf fill">PDF</span> <span class="rc-title" data-i18n="rc-name-ar">تحميل الكتيب (Arabic)</span>
+                        <div class="rc-meta">27-03-2026 | 1.06 MB</div>
+                    </div>
+                    <span class="rc-icon">↓</span>
+                </div>
+            </a>
+            <!-- MSDS -->
+            <a href="#contact" class="res-card msds">
+                <div class="rc-img-wrap empty"></div>
+                <div class="rc-footer">
+                    <div>
+                        <span class="rc-badge pdf warning">PDF</span> <span class="rc-title" data-i18n="rc-name-msds">MSDS (Material Safety Data Sheet)</span>
+                        <div class="rc-meta">27-03-2026 | 1.06 MB</div>
+                    </div>
+                    <span class="rc-icon">↓</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT & MAP -->
+    <section id="contact" class="sec-contact">
+        <div class="container text-center fi">
+            <div class="sec-tagline" data-i18n="contact-tag">— 06 — GET IN TOUCH</div>
+            <h2 class="sec-heading" data-i18n-html="contact-title">Reach Us. <em>Grow Together.</em></h2>
+            <p class="sec-subheading" data-i18n="contact-desc">Bulk export pricing, distributor partnerships, or product information — our team responds within 1–2 business days.</p>
+        </div>
+        
+        <div class="container contact-grid fi">
+            <div class="contact-left">
+                <!-- details -->
+                <div class="cl-row">
+                    <span class="clr-num">01</span>
+                    <div class="clr-content">
+                        <strong data-i18n="ir-1-h">Phone</strong><br>
+                        <a href="tel:+96896687703">+968 9668 7703</a> | +٩٦٨٩٦٦٨٧٧٠٣
+                        <button class="btn-micro" id="copy-btn" data-i18n="copy-btn">COPY NUMBER</button>
+                    </div>
+                </div>
+                <div class="cl-row">
+                    <span class="clr-num">02</span>
+                    <div class="clr-content">
+                        <strong data-i18n="ir-2-h">Email</strong><br>
+                        <a href="mailto:helpdesk@ripenol.com">helpdesk@ripenol.com</a><br>
+                        <a href="mailto:helpdesk@alawalawya.com">helpdesk@alawalawya.com</a>
+                    </div>
+                </div>
+                <div class="cl-row">
+                    <span class="clr-num">03</span>
+                    <div class="clr-content">
+                        <strong data-i18n="ir-3-h">Address</strong><br>
+                        Plot 187, Industrial Zone, Barka Sanaya Phase 2, Al Batinah South Governorate - 320, Oman.<br>
+                        المخطط ١٨٧، المنطقة الصناعية، بركاء الصنائعية المرحلة الثانية، محافظة الباطنة جنوب - ٣٢٠، عمان.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-right">
+                <span class="form-title" data-i18n="form-tag">SEND AN ENQUIRY</span>
+                <form id="enquiry-form" class="c-form">
+                    <div class="fg-half">
+                        <label data-i18n="f-name-lbl">FULL NAME</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="fg-half">
+                        <label data-i18n="f-co-lbl">COMPANY</label>
+                        <input type="text" placeholder="Organisation">
+                    </div>
+                    <div class="fg-half">
+                        <label data-i18n="f-email-lbl">EMAIL ADDRESS</label>
+                        <input type="email" placeholder="you@company.com" required>
+                    </div>
+                    <div class="fg-half">
+                        <label data-i18n="f-country-lbl">COUNTRY</label>
+                        <input type="text" placeholder="Origin Country">
+                    </div>
+                    <div class="fg-full">
+                        <label data-i18n="f-msg-lbl">MESSAGE</label>
+                        <textarea placeholder="Bulk pricing enquiry, distributor partnership..." required></textarea>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <span class="ff-note" data-i18n="form-note">RESPONSES WITHIN 1-2 BUSINESS DAYS</span>
+                        <button type="button" class="btn-primary" id="cf-submit" data-i18n="form-submit">SEND ENQUIRY →</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- MAP IBED FROM OLD TEST -->
+        <div class="container map-container fi" style="margin-top: 60px;">
+            <!-- Exactly from old site -->
+            <a href="https://maps.google.com/?q=23.6878,57.8653" target="_blank" rel="noopener" class="cmap" aria-label="Open in Google Maps">
+                <iframe src="https://maps.google.com/maps?q=23.6878,57.8653&z=10&output=embed" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" style="width: 100%; height: 500px; border: none; background: #6b7268;"></iframe>
+            </a>
+        </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="#" class="footer-logo">
+                        <img src="Images that you could need/RipenolTM-Logo-Text.png" alt="Ripenol" class="n-logo-img">
+                    </a>
+                    <div class="footer-tagline" data-i18n="footer-tagline">Pure Ethylene Conversion</div>
+                    <div class="al-logo-img-wrapper" style="margin-top:24px; margin-bottom:12px;">
+                        <img src="Images that you could need/Al Awalawya - logo - white text.png"
+                            alt="Al Awalawya Global Trading LLC"
+                            style="height:35px; width:auto; object-fit:contain; display:block;">
+                    </div>
+                    <div class="oman-badge-footer">
+                        <div class="ob-dot"></div>
+                        <div class="ob-text">Made in Oman</div>
+                    </div>
+                </div>
+                <div class="footer-cols">
+                    <div>
+                        <div class="footer-col-h" data-i18n="footer-nav-h">Navigate</div>
+                        <div class="footer-col-links">
+                            <a href="#purity" data-i18n="nav-purity">Purity</a>
+                            <a href="#performance" data-i18n="nav-performance">Performance</a>
+                            <a href="#investment" data-i18n="nav-investment">Investment</a>
+                            <a href="#supply" data-i18n="nav-supply">Global Supply</a>
+                            <a href="#resources">Resources</a>
+                            <a href="#contact" data-i18n="nav-contact">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-col-h" data-i18n="footer-contact-h">Contact</div>
+                        <div class="footer-col-links">
+                            <a href="tel:+96896687703">+968 9668 7703</a>
+                            <a href="mailto:helpdesk@ripenol.com">helpdesk@ripenol.com</a>
+                            <a href="mailto:helpdesk@alawalawya.com">helpdesk@alawalawya.com</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-col-h" data-i18n="footer-address-h">Address</div>
+                        <div class="footer-col-links">
+                            <a href="#">Plot 187, Industrial Zone</a>
+                            <a href="#">Barka Sanaya Phase 2</a>
+                            <a href="#">Al Batinah South, Oman</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copy" data-i18n="footer-copy">© 2026 Al Awalawya Global Trading LLC. All rights reserved.</div>
+                <a href="#" class="footer-credit">Built by Pixelistan</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
